@@ -79,6 +79,11 @@ function wcfm_listify_load_compact_styles( $end_point ) {
     wp_dequeue_style('wcfm_template_css');
     wp_deregister_style('wcfm_template_css');
 
+    // De registering Collapsible Styles
+
+    wp_dequeue_style('collapsible_css');
+    wp_deregister_style('collapsible_css');
+
   // switch( $end_point ) {
     // case 'wcfm-products-manage':
       //wp_enqueue_style( 'wcfmu_listify_products_manage_css', $plugin_url . 'css/wcfm-style-listify-products-manage.css', array( ), $WCFM->version );
